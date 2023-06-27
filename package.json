@@ -1,0 +1,21 @@
+{
+  "name": "litwind",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "tailwind": "tailwindcss ./src/index.css -o ./src/tailwind.css --watch",
+    "twlit": "twlit --input ./src/tailwind.css --output ./src/twlit.js",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "lit": "^2.7.2"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.2",
+    "twlit": "^0.0.1-alpha.37",
+    "vite": "^4.3.9"
+  }
+}
