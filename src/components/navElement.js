@@ -19,7 +19,7 @@ export class NavELement extends LitElement {
 
     constructor(){
         super();
-        this.brandName = "My Brand";
+        this.brandName = "My Brand is dinamic";
         this.links = [
             { name:'Inicio', src:'#' },
             { name:'Acerca de', src:'#' },
