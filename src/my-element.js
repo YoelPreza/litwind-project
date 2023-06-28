@@ -41,7 +41,8 @@ handleScroll(e){
   aboutElement.scrollIntoView({behavior:"smooth"})
 }
 
-static get styles() {
+
+  static get styles() {
     return [TWStyles]
   }
 }
