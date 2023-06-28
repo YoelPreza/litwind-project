@@ -51,7 +51,6 @@ export class NavELement extends LitElement {
                 sm:relative sm:-translate-x-0 sm:flex-row sm:flex sm:justify-end sm:w-max sm:bg-transparent
                 ">
                     ${this.links.map(link => html`<li @click="${this.scrollThis}" class="p-2 text-white hover:bg-slate-800/60 rounded-lg cursor-pointer transition
-                    
                     ">${link.name}</li>`)}
                 </ul>
 
