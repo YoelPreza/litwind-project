@@ -13,7 +13,7 @@ export class ServicesELement extends LitElement {
     render() {
         return html`
 
-<main class="flex flex-col items-center justify-center bg-blue-200 min-h-screen">
+<main id="services" class="flex flex-col items-center justify-center bg-blue-200 min-h-screen">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-10 place-items-center text-center text-white text-xl font-semibold">
           <div class="flex flex-col items-center my-10">
             <img width="200" class="mx-auto flex" src="src/images/desk_lamp.png" />
@@ -41,4 +41,4 @@ export class ServicesELement extends LitElement {
         `;
     }
 }
-customElements.define('services-element', ServicesELement);
+customElements.define('servicios-element', ServicesELement);
