@@ -11,7 +11,7 @@ export class AboutELement extends LitElement {
 
     render() {
         return html`
-            <main id="about" class="w-full border border-red-500 min-h-screen bg-yellow-200">
+            <main class="w-full border border-red-500 min-h-screen bg-yellow-200">
                 <div class="flex flex-col md:flex-row items-center h-maxcx">
                     <p class="text-red-500 text-center text-4xl w-1/2 p-10"><span class="text-4xl">"</span>Nuestro trabajo sólo tiene sentido si es un testimonio fiel de su tiempo."</p>
                     <img class="h-full w-auto mx-auto" src="src/images/shop-girl.png" />
