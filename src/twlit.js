@@ -656,6 +656,10 @@ video {
   top: 100%;
 }
 
+.top-1\\/2 {
+  top: 50%;
+}
+
 .z-50 {
   z-index: 50;
 }
@@ -823,6 +827,16 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.-translate-x-\\[120\\%\\] {
+  --tw-translate-x: -120%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-y-1\\/2 {
+  --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
@@ -950,6 +964,10 @@ video {
 .bg-yellow-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(254 240 138 / var(--tw-bg-opacity));
+}
+
+.bg-slate-500\\/60 {
+  background-color: rgb(100 116 139 / 0.6);
 }
 
 .bg-\\[url\\(\\'\\.\\/src\\/images\\/shop-girl\\.png\\'\\)\\] {
@@ -1106,6 +1124,10 @@ video {
   background-color: rgb(100 116 139 / var(--tw-bg-opacity));
 }
 
+.hover\\:bg-slate-800\\/60:hover {
+  background-color: rgb(30 41 59 / 0.6);
+}
+
 @media (min-width: 640px) {
   .sm\\:relative {
     position: relative;
@@ -1122,6 +1144,10 @@ video {
   .sm\\:w-max {
     width: -moz-max-content;
     width: max-content;
+  }
+
+  .sm\\:w-96 {
+    width: 24rem;
   }
 
   .sm\\:-translate-x-0 {
