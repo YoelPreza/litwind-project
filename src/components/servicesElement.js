@@ -41,4 +41,4 @@ export class ServicesELement extends LitElement {
         `;
     }
 }
-customElements.define('services-element', ServicesELement);
+customElements.define('servicios-element', ServicesELement);
