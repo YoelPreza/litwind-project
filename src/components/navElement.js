@@ -30,30 +30,31 @@ export class NavELement extends LitElement {
     }
 
     toggleMEnu(e){
-        this.shadowRoot.querySelector('.links').classList.toggle('-translate-x-full')
+        this.shadowRoot.querySelector('.links').classList.toggle('-translate-x-[120%]')
     }
 
     scrollThis(e) {
         e.preventDefault()
         const innerText = e.target.innerText;
         this.dispatchEvent(new CustomEvent('scroll-this', { detail: innerText, bubbles:true, composed:true}))
+
+        this.toggleMEnu()
     }
 
     render() {
         return html`
-            <nav class="bg-slate-800/60 backdrop-blur-sm  fixed top-5 w-11/12 left-1/2 -translate-x-1/2 z-50 flex justify-between items-center  p-2 px-5 ">
+            <nav class="bg-slate-800/60 rounded-lg backdrop-blur-sm fixed top-5 w-11/12 left-1/2 -translate-x-1/2 z-50 flex justify-between items-center p-2 px-5">
                 <ul>
                     <li class="text-white font-bold">${this.brandName}</li>
                 </ul>
-                <ul class="links absolute top-full left-0 bg-slate-600 w-full text-center -translate-x-full transition
+                <ul class="links absolute top-full left-0 bg-slate-500/60 backdrop-blur-sm w-full rounded-lg text-center -translate-x-[120%] transition
                 sm:relative sm:-translate-x-0 sm:flex-row sm:flex sm:justify-end sm:w-max sm:bg-transparent
                 ">
-                    ${this.links.map(link => html`<li @click="${this.scrollThis}" class="p-2 text-white hover:bg-slate-500 cursor-pointer transition
-                    
-                    ">${link.name} </li>`)}
+                    ${this.links.map(link => html`<li @click="${this.scrollThis}" class="p-2 text-white hover:bg-slate-800/60 rounded-lg cursor-pointer transition
+                    ">${link.name}</li>`)}
                 </ul>
 
-                <button @click=${this.toggleMEnu} class="text-white border p-2 
+                <button @click=${this.toggleMEnu} class="text-white rounded-lg border p-2 
                 sm:hidden
                 ">menu</button>
             </nav>
