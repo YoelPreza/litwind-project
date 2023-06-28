@@ -757,6 +757,10 @@ video {
   height: 100vh;
 }
 
+.h-\\[calc\\(100vh-50px\\)\\] {
+  height: calc(100vh - 50px);
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -1134,6 +1138,11 @@ video {
 
 .hover\\:bg-slate-800\\/60:hover {
   background-color: rgb(30 41 59 / 0.6);
+}
+
+.hover\\:bg-slate-500:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
 }
 
 @media (min-width: 640px) {
