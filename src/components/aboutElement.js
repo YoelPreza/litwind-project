@@ -22,6 +22,7 @@ export class AboutELement extends LitElement {
                         md:w-1/2
                         py-5
                         m-5
+                        
                     ">
                         <img class="h-[250px] rounded-full mx-auto absolute left-0 top-0"  src="src/images/shop-girl.png" />
                         <img class="h-48 rounded-full mx-auto absolute left-1/2 -translate-y-1/2 -translate-x-1/2 top-1/2" src="src/images/shop-girl.png" />
