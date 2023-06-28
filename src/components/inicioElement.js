@@ -12,9 +12,10 @@ export class InicioELement extends LitElement {
 
     render() {
         return html`
-        <main  class="flex flex-col md:flex-row mt-14">
+        <main  class="flex flex-col md:flex-row ">
 
-        <div class="lg:w-1/2 w-full h-[calc(100vh-50px)] bg-[url('./src/images/shop-girl.png')] bg-center bg-cover bg-no-repeat">
+        <div class="lg:w-1/2 w-full h-screen bg-[url('./src/images/shop-girl.png')] bg-center bg-cover bg-no-repeat">
+
         </div>
         <div class="lg:w-1/2 p-10 w-full bg-pink-100 flex flex-col justify-center items-center">
           <h1 class="text-red-500 text-5xl text-center font-bold font-sans">Miralo, crealo, <br> pruebalo, <br> hazlo</h1>

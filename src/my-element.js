@@ -37,28 +37,11 @@ export class MyElement extends LitElement {
     `
   }
 handleScroll(e){
-  // console.log(e.detail);
-  // document.querySelector("#inicio")?.scrollIntoView()
-  // console.log(this.shadowRoot.querySelector("about-element").querySelectorAll("main"));
   const aboutElement = this.shadowRoot.querySelector(e.detail + "-element");
   aboutElement.scrollIntoView({behavior:"smooth"})
-  // if (aboutElement) {
-  //   const mainElements = aboutElement.shadowRoot.querySelectorAll("main");
-  //   if (mainElements.length > 0) {
-  //     // Accede al primer elemento "main" encontrado
-  //     const firstMainElement = mainElements[0];
-  //     const id = firstMainElement.id;
-  //     console.log(id);
-      
-    // }
-  // }
 }
 
-  _onClick() {
-    this.count++
-  }
-
-  static get styles() {
+static get styles() {
     return [TWStyles]
   }
 }
