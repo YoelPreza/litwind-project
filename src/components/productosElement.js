@@ -24,8 +24,9 @@ export class ProductosELement extends LitElement {
             name: "Basic",
             description:["Navbar c/ 5 secciones", "SP", "Footer", "Actualización costo adicional"],
             price: "$2000",
-            bg: "bg-orange-800",
-            tx:"text-orange-800"
+            bg: "bg-pink-400",
+            tx:"text-pink-700",
+
         },
         {
             id: 2,
@@ -38,8 +39,9 @@ export class ProductosELement extends LitElement {
             "Actualización  costo adicional"
             ],
             price: "$4000",
-            bg: "bg-blue-800",
-            tx:"text-blue-800"
+            bg: "bg-pink-300",
+            tx:"text-pink-700",
+
         },
         {
             id: 3,
@@ -53,8 +55,8 @@ export class ProductosELement extends LitElement {
             "1 Actualización mensual sin costo dentro de los parámetros iniciales durante 6 meses"
             ],
             price: "$6000",
-            bg: "bg-green-800",
-            tx:"text-green-800",
+            bg: "bg-pink-200",
+            tx:"text-pink-700",
             md:"span-2"
         },
         ]
@@ -62,16 +64,16 @@ export class ProductosELement extends LitElement {
 
     render() {
         return html`
-        <div class="bg-blue-300  h-max flex flex-wrap   justify-center">
+        <div class="bg-pink-700  h-max flex flex-wrap   justify-center">
         ${this.products.map(prod=>html`
-            <div class=" ${prod.bg} max-w-[400px] mx-auto my-5 h-max text-left p-20 text-white rounded-xl">
+            <div class=" ${prod.bg} max-w-[400px] mx-auto my-5 h-max text-left p-20 text-pink rounded-xl">
                 <img class="w-20" src=${prod.img} alt="imagen de bronce"/> 
                 <h2 class="text-5xl font-bold my-12">${prod.name}</h2>
                 <ul class=" h-max">${prod.description.map(des=>html`
                     <li class="list-disc list-item text-2xl ">${des}</li>`)}
                 </ul> 
                 <p class=" text-4xl text-center font-bold my-12 ">${prod.price} </p> 
-                <button class=" ${prod.tx} p-5 w-52 text-xl font-bold -translate-x-5 bg-white rounded-full">Details</button>
+                <button class=" ${prod.tx} p-5 w-52 text-xl font-bold -translate-x-5 bg-yellow-200 rounded-full">Details</button>
             </div>` )}
         
         <div>

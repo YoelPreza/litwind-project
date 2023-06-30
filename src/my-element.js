@@ -6,7 +6,9 @@ import "./components/navElement.js"
 import "./components/servicesElement.js"
 import "./components/aboutElement.js"
 import './components/inicioElement.js'
+import './components/contactElement.js'
 import './components/productosElement.js'
+
 
 export class MyElement extends LitElement {
   static get properties() {
@@ -36,6 +38,9 @@ export class MyElement extends LitElement {
       <servicios-element></servicios-element>
 
       <productos-element></productos-element>
+      
+      <contacto-element></contacto-element>
+
 
     `
   }
@@ -44,7 +49,8 @@ handleScroll(e){
   aboutElement.scrollIntoView({behavior:"smooth"})
 }
 
-static get styles() {
+
+  static get styles() {
     return [TWStyles]
   }
 }
