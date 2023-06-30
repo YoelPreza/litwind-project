@@ -19,20 +19,16 @@ export class ProductosELement extends LitElement {
     constructor(){
         super();
         this.products = [
-            {
-                img: "asdasd",
-                price: 1,
-                name: "Business",
-            description:["Navbar", "5 páginas de contenido estático", 
-            "inicio, nosotros, servicio, clientes, contacto",
-            "Footer",
-            "Botón redes sociales",
-            "Actualización  costo adicional"
-            ],
-            price: "$4000",
-            bg: "bg-pink-300",
+           {
+            id: 1,
+            img:"https://cdn-icons-png.flaticon.com/128/5406/5406582.png",
+            name: "Basic",
+            description:["Navbar c/ 5 secciones", "SP", "Footer", "Actualización costo adicional"],
+            price: "$2000",
+            bg: "bg-pink-400",
             tx:"text-pink-700",
-            },
+
+        },
         {
             id: 2,
             img:"https://images.wikidexcdn.net/mwuploads/wikidex/3/30/latest/20221117203319/Medalla_Dominante_Roca.png",
