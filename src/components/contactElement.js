@@ -36,4 +36,4 @@ export class ContactELement extends LitElement {
             </form>`;
     }
 }
-customElements.define('contact-element', ContactELement);
+customElements.define('contacto-element', ContactELement);
