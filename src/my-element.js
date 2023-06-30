@@ -35,7 +35,7 @@ export class MyElement extends LitElement {
 
       <servicios-element></servicios-element>
 
-      <contact-element></contact-element>
+      <contacto-element></contacto-element>
 
     `
   }
