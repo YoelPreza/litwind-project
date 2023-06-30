@@ -1,5 +1,5 @@
 import { LitElement, html, css } from 'lit';
-import {TWStyles} from '../twlit'
+import { TWStyles } from '../twlit'
 
 export class NavELement extends LitElement {
     static styles = [ TWStyles,
