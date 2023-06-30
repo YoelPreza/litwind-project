@@ -12,7 +12,7 @@ export class ProductosELement extends LitElement {
 
     static get properties() {
         return {
-            products: { type: Object },
+            products: { type: Array, reflect: true  },
         };
     }
 

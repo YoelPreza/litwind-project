@@ -735,6 +735,16 @@ video {
   margin-right: auto;
 }
 
+.my-0 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.my-1 {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
 .my-10 {
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
@@ -758,16 +768,6 @@ video {
 .my-6 {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
-}
-
-.my-0 {
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
-.my-1 {
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
 }
 
 .mt-1 {
@@ -1224,6 +1224,11 @@ video {
   background-color: rgb(71 85 105 / var(--tw-bg-opacity));
 }
 
+.bg-slate-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(51 65 85 / var(--tw-bg-opacity));
+}
+
 .bg-slate-800 {
   --tw-bg-opacity: 1;
   background-color: rgb(30 41 59 / var(--tw-bg-opacity));
@@ -1231,6 +1236,11 @@ video {
 
 .bg-slate-800\/60 {
   background-color: rgb(30 41 59 / 0.6);
+}
+
+.bg-slate-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
 }
 
 .bg-transparent {
@@ -1255,20 +1265,6 @@ video {
 .bg-yellow-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(234 179 8 / var(--tw-bg-opacity));
-}
-
-.bg-slate-800\/50 {
-  background-color: rgb(30 41 59 / 0.5);
-}
-
-.bg-slate-700 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(51 65 85 / var(--tw-bg-opacity));
-}
-
-.bg-slate-900 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'\.\/src\/images\/shop-girl\.png\'\)\] {
@@ -1560,18 +1556,6 @@ video {
   transition-duration: 150ms;
 }
 
-.hover\:bg-slate-800\/60:hover {
-  background-color: rgb(30 41 59 / 0.6);
-}
-
-.hover\:bg-slate-700\/60:hover {
-  background-color: rgb(51 65 85 / 0.6);
-}
-
-.hover\:bg-slate-900\/60:hover {
-  background-color: rgb(15 23 42 / 0.6);
-}
-
 .hover\:bg-slate-500\/60:hover {
   background-color: rgb(100 116 139 / 0.6);
 }
@@ -1616,10 +1600,6 @@ video {
     justify-content: flex-end;
   }
 
-  .sm\:rounded-lg {
-    border-radius: 0.5rem;
-  }
-
   .sm\:bg-transparent {
     background-color: transparent;
   }
@@ -1644,14 +1624,6 @@ video {
 
   .md\:flex-row {
     flex-direction: row;
-  }
-
-  .md\:rounded-lg {
-    border-radius: 0.5rem;
-  }
-
-  .md\:bg-transparent {
-    background-color: transparent;
   }
 }
 
